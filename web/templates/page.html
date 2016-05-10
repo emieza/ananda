@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% if pages %}
+<ul>
+{% for page in pages %}
+	<li><a href="/page/{{page.id}}">{{page.name}}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if page %}
+	<h2>PAGE {{page.name}}</h2>
+	{{page.text|safe}}
+{% endif %}
+
+
+{% endblock %}

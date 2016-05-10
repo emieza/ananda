@@ -17,7 +17,7 @@ Ananda is a simple CMS for webpages using Django framework.
 - Collect static files with:
 
         python manage.py collectstatic
-- Run server with or install in webserver using WSGI:
+- Run development server (or install in webserver using WSGI):
 
         python manage.py runserver
 
