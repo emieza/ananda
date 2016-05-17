@@ -1,6 +1,7 @@
 db.sqlite3
 static/
 *.pyc
+web/migrations/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

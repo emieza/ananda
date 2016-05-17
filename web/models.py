@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 from datetime import datetime
 from django.db import models
-from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.utils.timezone import now
 
 # Create your models here.
@@ -13,6 +13,6 @@ class Page(models.Model):
 	creation_date = models.DateTimeField(default=now())
 	modified_date = models.DateTimeField()
 	order = models.IntegerField(default=0)
-	text = RichTextField()
+	text = RichTextUploadingField(config_name='ckeditor1')
 	def __unicode__(self):
 		return self.name
