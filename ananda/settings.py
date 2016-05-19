@@ -119,15 +119,23 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = "static"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"assets"),
+]
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
 
 MEDIA_ROOT = "media"
 MEDIA_URL = "imgs/"
 
+# CKeditor (RichText) configuration
+# http://docs.ckeditor.com/#!/api/CKEDITOR.config
 CKEDITOR_CONFIGS = {
     'ckeditor1': {
         'toolbar':'full',
-        
+        'language':'ca',
+        'width':'100%',
+        'uiColor': '#aa0000',
+        'contentsCss':'/static/base.css',
     }
 }

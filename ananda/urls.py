@@ -14,6 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import include,url
+from django.conf.urls.static import static
+from django.conf import settings
 from django.contrib import admin
 from web import views
 
@@ -22,5 +24,5 @@ urlpatterns = [
     url(r'^page/(?P<id>[0-9]+)/$', views.page),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     url(r'^$', views.page),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

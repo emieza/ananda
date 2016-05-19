@@ -2,6 +2,7 @@
 
 {% block body %}
 
+<div class="navegacio">
 {% if pages %}
 <ul>
 {% for page in pages %}
@@ -9,6 +10,7 @@
 {% endfor %}
 </ul>
 {% endif %}
+</div>
 
 {% if page %}
 	<h2>PAGE {{page.name}}</h2>

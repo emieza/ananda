@@ -1,0 +1,240 @@
+/* Paginetes CSS */
+
+body {
+	text-align: center;
+	background-color: #bd3a1c;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.08em;
+	overflow-y: scroll;
+}
+
+/* color base */
+.mainwrapper , table {
+    color: #eeeedd;
+}
+.mainwrapper {
+	width: 1000px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+	color: white;
+	background-color: #bd3a1c;
+}
+
+.continguts {
+	padding: 30px;
+	min-height: 400px;
+}
+
+.header {
+	padding: 50px 30px 30px 30px;
+	color: white;
+}
+
+.banner {
+	display: inline;
+	margin: 0;
+}
+
+.logo {
+	width: 25%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.navegacio {
+	margin: 0;
+	width: 74%;
+	display: inline-block;
+	text-align: right;
+}
+
+/* barra navegació (pestanyes) */
+.header ul {
+	margin: 0;
+	padding-top: 1em;
+}
+
+/* pestanyes */
+.header li {
+	display: inline;
+	min-width: 60px;
+	padding-left: 16px;
+	padding-top: 10px;
+	margin-left: 4px;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.header li:hover {
+	/*text-decoration: underline;*/
+	color: #e37a13;
+}
+
+.header li.active {
+	color: #e37a13;
+	text-decoration: none;
+}
+
+.header li a {
+	text-decoration: none;
+	color: white;
+}
+
+.header li:hover a {
+
+}
+
+
+/*  ESTILS */
+
+a:link {
+    background-color: #e37a13;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0.3em 0.7em;
+}
+
+.banner a {
+    padding: 0;
+}
+
+h1 {
+    border-bottom: 2px white solid;
+    font-style: normal;
+}
+
+h2 {
+    font-style: normal;
+}
+
+p {
+    line-height: 2;
+    text-align: justify;
+}
+
+big {
+    font-size: 160%;
+    line-height: 130%;
+    font-weight: bold;
+}
+
+
+
+/* TAULA HORARIS */
+table.horari {
+	color:black;
+}
+
+table.horari .bordeinf {
+    border-bottom: 1px white solid
+}
+
+table.horari .cap {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+table.horari .classe , table .classe {
+    background-color: orange;
+    text-align: center;
+    font-size: 14px;
+}
+table.horari .classe2 , table .classe2 {
+    background-color: #dddd88;
+    text-align: center;
+    font-size: 14px;
+}
+table.horari .classe3 , table .classe3 {
+    background-color: #ff7733;
+    text-align: center;
+    font-size: 14px;
+}
+
+table.horari th, table.horari td {
+    font-size: 8px;
+}
+
+
+
+/* indexbox = capçaleres top pagina */
+.indexbox {
+    border-radius: 12px;
+    width: 300px;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 6px;
+}
+
+.indexbox img {
+    width: 100%;
+}
+
+.indexbox p {
+    background-color: white;
+    color: #BD3A1C;
+    letter-spacing: 0.16em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.indexbox a {
+    padding: 6px 16px;
+    display: block;
+    width: 85%;
+    background-color: white;
+    color: #BD3A1C;
+}
+
+.indexbox a img {
+    width: 20px;
+    position: absolute;
+    right: 16px;
+    bottom: 11px;
+}
+.navegacio {
+    /*float:right;*/
+    width: 70%;
+    display: inline-block;
+    //display: inline; /* IE8 */
+}
+
+.header ul {
+    padding: 1em 0 0 0;
+    /*width: 65%;*/
+}
+
+a img {
+    border: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+body {
+    //letter-spacing: 0.06em;
+}
+
+.indexbox p {
+    letter-spacing: 0.16em;
+    left: 0;
+}
+
+.indexbox {
+    height: 230px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
